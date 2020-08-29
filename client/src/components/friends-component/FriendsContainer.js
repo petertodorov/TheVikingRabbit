@@ -6,13 +6,13 @@ function FriendsContainer(props) {
     // let speciesList;
 
     function imageProvider(id) {
-       if(props.friendsImages==undefined){
-        let currentImage = props.friendsImages[id]
-        return { image: currentImage.image, alt: currentImage.title }
-       }else{
-        return { image:'', alt: "Ooops, no image available" }
-       }
-        
+        if (props.friendsImages == undefined) {
+            let currentImage = props.friendsImages[id]
+            return { image: currentImage.image, alt: currentImage.title }
+        } else {
+            return { image: '', alt: "Ooops, no image available" }
+        }
+
     }
 
     if (props.friendsData !== undefined) {

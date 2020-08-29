@@ -1,5 +1,6 @@
 import React from 'react';
 import FindForm from './FindForm.js'
+import './MoviesContainer.css'
 function MoviesContainer(props) {
     let movieContainer
     let counter = 0;
@@ -13,13 +14,16 @@ function MoviesContainer(props) {
                 {movie.description}</div>
             counter += 1
             return (
-                <section id={movie.id} key={movie.id} className="friends-container">
+                <section id={movie.id} key={movie.id} className="movies-main-container">
                     <hr />
                     <article>
                         <section className="title-counter-container">
+                            <div className="movie-title-container">
                             <h2>Title</h2>
                             {movieTitle}
-                            <div class="movie-counter-index">{counter}.</div>
+                            </div>
+                            
+                            <div className="movie-counter-index">{counter}</div>
                         </section>
 
                         <h2>Description</h2>
