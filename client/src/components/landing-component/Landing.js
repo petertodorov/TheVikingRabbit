@@ -34,7 +34,7 @@ function Landing() {
 
                 <div className="rabbit-element-box">
                     <img className="blob" src={violetBLob} alt="blob violet" />
-                    <Link to="/friends" className="rabbit-element-content" >Friends and Carrots</Link>
+                    <Link to="/friends" className="rabbit-element-content" >Movies, Friends and Carrots</Link>
                 </div>
             </section>
         </main>
