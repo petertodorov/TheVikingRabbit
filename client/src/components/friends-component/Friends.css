@@ -14,7 +14,6 @@
     display: none;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-evenly;
 }
 
 .friends-title {
@@ -23,7 +22,7 @@
 
 .friends-article-wrapper {
     border: 2px solid lightblue;
-    border-radius:5px;
+    border-radius: 5px;
     flex: 0 0 32%;
     padding: 1em;
     margin: 1em 0;
@@ -103,10 +102,21 @@
     outline: none;
 }
 
+.title-finder-container {
+    flex: 1 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.title-finder-container>h1 {
+    margin: 0;
+}
 
 .find-form {
     min-width: 210px;
+    text-align: end;
     position: relative;
 }
 
@@ -114,8 +124,16 @@
     .friends-article-wrapper {
         flex: 100%;
     }
-    .friends-buttons{
+    .friends-buttons {
         height: 4rem;
         width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .find-form {
+        width:100%;
+        text-align: unset;
+        margin:0.8em 0 0.4em 0;
     }
 }
