@@ -16,9 +16,12 @@ function MoviesContainer(props) {
                 <section id={movie.id} key={movie.id} className="friends-container">
                     <hr />
                     <article>
-                        <div>{counter}.</div>
-                        <h2>Title</h2>
-                        {movieTitle}
+                        <section className="title-counter-container">
+                            <h2>Title</h2>
+                            {movieTitle}
+                            <div class="movie-counter-index">{counter}.</div>
+                        </section>
+
                         <h2>Description</h2>
                         {movieDescription}
                     </article>
