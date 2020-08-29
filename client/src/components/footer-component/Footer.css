@@ -1,0 +1,7 @@
+.site-footer {
+    background: #aeae48;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: var(--footer-height);
+}

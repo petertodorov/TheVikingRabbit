@@ -1,0 +1,65 @@
+.pic-wrapper {
+    text-align: -webkit-center;
+    position: relative;
+    height: 25em;
+    width: 100%;
+}
+
+.sound-help-button-container{
+    text-align:center;
+}
+.stop-rotate-button-container {
+    display: inline-block;
+    vertical-align: super;
+    margin: 0 1em;
+}
+
+.circle {
+    /* Animation to spin and move the sphere */
+    animation: spin 2000ms linear infinite, moveLeftToRight 5s linear infinite;
+    transition: all 1s ease;
+    position: absolute;
+    left: 0;
+}
+.circle-paused {
+    /* Animation to spin and move the sphere */
+    animation:  2000ms linear infinite, moveLeftToRight 5s linear infinite paused;
+    transition: all 1s ease;
+    position: absolute;
+    left: 0;
+}
+/* Spinning the sphere using key frames */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Move sphere from left to right */
+
+@keyframes moveLeftToRight {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+[data-icon="volume-up"]{
+    color:lightblue;
+    width:2rem;
+    height:2rem
+}
+svg{
+    opacity:1;
+}
+.muted-sound{
+    border:2px solid lightblue;
+    border-radius:5px;
+    opacity:0.2;
+}

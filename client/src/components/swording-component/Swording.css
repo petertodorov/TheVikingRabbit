@@ -1,0 +1,118 @@
+:root {
+    --border-radius: 5px;
+}
+
+.swording-style {
+    width: 69em;
+    background: pink;
+    height: 40em;
+    display:flex;
+    
+}
+
+.swords-wrapper, .sword-view-container {
+    display:inline-block;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    margin: 1rem;
+    vertical-align: top;
+    height: 100%;
+}
+
+.swords-wrapper {
+    width: 30%;
+}
+
+.swords-container {
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: inherit;
+}
+
+.sword-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightsteelblue;
+    border-radius: var(--border-radius);
+    flex: 0 0 70%;
+    height:10%;
+    border:none;
+    border-radius: var(--border-radius);
+    color: white;
+}
+.sword-box:focus{
+    box-shadow: 0 0 3pt 2pt var(--outline-color);    
+    outline:none;
+}
+
+.sword-box>span{
+   display:block;
+   text-align: center;
+   width:60%;
+    /* prevents line to break on new row and add elipsis if the content overflows the container */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bolder;
+    font-size:1rem;
+}
+.sword-box:hover span {
+    white-space: normal;
+}
+
+
+
+.sword-view-container {
+    width: 60%;
+}
+
+.sword-view-container h2 {
+    text-align: center;
+}
+
+.sword-view-image-container {
+    background: lightblue;
+    height: 70%;
+    border-radius: 5px;
+    margin: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sword-image{
+    height: 5em;
+    width: 5em;
+    background: yellow;
+    position: absolute;
+    opacity: 0;
+}
+
+.active-sword-button {
+    opacity:0.7;
+}
+
+.active-sword {
+    opacity: 1;
+    z-index: 1;
+    background: green;
+}
+
+
+.sword-skills-container{
+
+}
+.skills{
+
+    background:lightyellow;
+}
+@media screen and (max-width: 480px) {
+    .swords-container {
+        width: 100%;
+    }
+}

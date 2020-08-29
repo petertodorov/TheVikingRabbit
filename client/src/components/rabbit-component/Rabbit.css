@@ -1,0 +1,63 @@
+.mask .pic-container {
+  position: relative;
+}
+
+.click-me {
+  position: absolute;
+  top: 10em;
+  left: 8.5em;
+}
+
+.story-para {
+  width: 50%;
+  float: left;
+  margin-top: 0;
+  padding-right: 40px;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #dddddd;
+  margin: 0;
+  padding-left: 40px;
+  padding-bottom: 60px;
+  float: right;
+  width: 50%;
+}
+
+blockquote footer {
+  text-align: right;
+}
+
+.stories-title {
+  width: 100%;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 1;
+  padding: 1rem 0;
+  margin: 1rem 0 0 0;
+}
+
+.rabbit-stories-wrapper {
+  clear: both;
+  width: 100%;
+  height: 30em;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  align-content: space-between;
+  justify-content: space-between;
+  padding: 0 1em 1em 1em;
+  position: relative;
+}
+
+@media screen and (max-width:860px) {
+  .rabbit-stories-wrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 30em;
+  }
+}

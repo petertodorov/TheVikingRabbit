@@ -1,0 +1,35 @@
+:root{
+    --widht-big-screen:20em;
+    --height-big-screen:20em;
+    --widht-small-screen:10em;
+    --height-small-screen:10em;
+
+}
+
+.mask,.pic-container {
+    height: var(--height-big-screen);
+    width: var(--widht-big-screen);
+}
+.mask {
+    border: 3px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.pic-container {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pic-container img {
+    width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+@media screen and (max-width:480px) {
+.mask, .pic-container{
+    height: var(--height-small-screen);
+    width: var(--widht-small-screen);
+}
+}

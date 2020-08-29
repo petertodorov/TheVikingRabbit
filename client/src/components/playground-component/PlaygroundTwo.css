@@ -1,0 +1,127 @@
+.playground-body {
+    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-wrapper {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.main-aside-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-element {
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px darkgray;
+    border: 2px solid black;
+    background: white;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.flex-element.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-right: 1em;
+    flex: 0 0 30%;
+    padding: 0.2em;
+}
+
+.nav-wrapper {
+    background: lemonchiffon;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.header-boxes {
+    border: 2px solid black;
+    background: lightblue;
+    padding: 1em;
+    margin-left: 0.4em;
+    border-radius: 5px;
+}
+
+.main-element, aside {
+    min-height: 500px;
+}
+
+.main-element {
+    flex: 0 0 70%;
+}
+
+aside {
+    flex: 0 0 25%;
+}
+
+.footer-element {
+    min-height: 90px;
+}
+
+@media screen and (max-width:860px) {
+    .logo {
+        flex: 0 0 96%;
+        margin: 0.5em 0;
+        text-align: center;
+    }
+    .main-aside-wrapper {
+        flex-direction: column;
+    }
+    .flex-element.header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-wrapper {
+        flex: 1 0 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .header-boxes {
+        flex: 0 0 45%;
+        min-width: 6em;
+        margin: 0.2em auto;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .first {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 19px;
+    }
+    .second {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 19px;
+    }
+    .third {
+        border-top-left-radius: 19px;
+        border-bottom-left-radius: 50px;
+    }
+    .fourth {
+        border-top-right-radius: 19px;
+        border-bottom-right-radius: 50px;
+    }
+}
+
+@media screen and (max-width:287px) {
+    .header-boxes {
+        border-radius: 50%;
+        height: 6em;
+        width: 6em;
+        line-height: 6em;
+        padding: 0;
+        border:3px solid white;
+        color:white;
+    }
+}

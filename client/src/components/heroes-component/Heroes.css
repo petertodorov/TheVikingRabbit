@@ -1,0 +1,16 @@
+.all-heros-container {
+    text-align: center;
+  }
+  
+  .all-heros-container .mask {
+    display: inline-block;
+    margin: 0 1em;
+  } 
+  .all-heros-container .click-wrapper{
+  display:inline-block;    
+  }
+  .click-wrapper{
+    margin:1rem 0;
+  }
+
+  

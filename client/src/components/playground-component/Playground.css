@@ -1,0 +1,88 @@
+.main.playground {
+    background: lightblue;
+    height: 640px;
+    width: 1200px;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background: yellow;
+    width: 100%;
+    margin-bottom:auto;
+}
+
+#result-box {
+    background: orange;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+#result-box>div {
+width:50%;
+}
+.just-a-div{
+    width:100%;
+    background:beige;
+    margin-top:auto;
+}
+
+.box {
+    /* border: 1px solid white; */
+    margin: 0.2em 2em;
+}
+
+.item1 {
+    flex: 0 0 10em;
+}
+
+.item2 {
+    flex: 0 0 10em;
+}
+
+.box.item3 {
+    justify-content: flex-end;
+    flex: 1 1 10em;
+}
+
+.item1, .item2, .item3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background: pink;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:860px) {
+    .wrapper {
+        align-content: flex-start;
+        justify-content: space-between;
+    }
+    .box.item3 {
+        flex: 0 1 100%;
+        justify-content: center;
+    }
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .box {
+        flex: 0 1 100%;
+    }
+    .content {
+        width: 50%;
+    }
+}
+
+
